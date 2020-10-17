@@ -1,0 +1,188 @@
+//import variables
+@import "variables.less";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: @baseFont;
+    /*outline: 1px dotted red*/
+}
+#container{
+    margin: 0 auto;
+    width: 970px;
+    background-image: @fondoBase;
+}
+#cabecera{
+    padding: 5px;
+
+    img{
+        display: inline-block;
+        width: 424px;
+        height: 120px;
+        margin: 15px 210px 15px 15px;
+    }
+    #buscar{
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+
+        .buscar-btn{
+            background-color: #444;
+            padding: 15px 30px;
+            .baseRadiusShadow;
+
+            #search{
+                padding: 10px;
+                border-style: inset;
+            }
+            #search::-webkit-input-placeholder{
+                text-align: center;
+            }
+            #go{
+                background-color: #245076;
+                color: @blanco;
+                padding: 8px;
+                border-radius: 5px;
+                font-size: @headFontSIze;
+            }
+        }
+    }
+}
+#contenido{
+    padding: 0px 40px 0px 70px;
+
+    #menu-h{
+        list-style-type: none;
+        overflow: hidden;
+        background-color: @azulClaro;
+        .baseRadiusShadow;
+        padding: 0px 40px;
+
+        .li-h{
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .op-h{
+            display: block;
+            color: @blanco;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 8px 10px 10px;
+            font-size: @menuHFontSize;
+        }
+    }
+    #submenu{
+        display: inline-block;
+        vertical-align: top;
+        width: 200px;
+        text-align: center;
+        padding-top: 40px;
+
+        #menu-v{
+            list-style-type: none;
+        }
+        .li-v{
+            margin-bottom: 10px;
+        }
+        .li-v::before{
+            content: "\BB"; /* FontAwesome Unicode */
+            color: @amarillo;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .op-v{
+            color: @blanco;
+        }
+    }
+
+    #parrafos{
+        display: inline-block;
+        width: 650px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .frases{
+            font-size: 20px;
+            font-style: oblique;
+            color: @amarillo;
+            margin-bottom: 10px;
+        }
+        .zen{
+            color: @blanco;
+            font-style: normal;
+            font-size: @menuPieFontSize;
+        }
+    }
+}
+#subcontenido{
+    background-color: @blanco;
+    padding: 0px 40px 0px 70px;
+
+    .recuadro{
+        width: 310px;
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 30px;
+        margin-top: 10px;
+        padding: 5px 60px 10px 20px;
+        text-align: center;
+        .hrSubcontenido;
+
+        .ul-a{
+            list-style-position: outside;
+            padding-left: 30px;
+        }
+        .li-a{
+            list-style-type: square;
+            font-size: @pFontSize;
+        }
+    }
+}
+#pie{
+    padding: 40px 40px 0px 70px;
+    text-align: center;
+
+    .menu-pie{
+        display: inline-block;
+        margin-left: 30px;
+        font-size: @menuPieFontSize;
+    }
+    .far{
+        font-size: 10px;
+        color: @celeste;
+    }
+    .copy::before{
+        content: "\f1f9";/* FontAwesome Unicode */   
+    }
+}
+.color-a{
+    color: @amarillo;
+}
+.letra{
+    color: @blanco;
+    margin-right: 15px;
+    font-size: @pFontSize;
+} 
+.margen{
+    margin-bottom: 10px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.color-n{
+    color: @negro;
+}
+.a-link{
+    text-decoration: none;
+    color: @celeste;
+}
+.size{
+    font-size: 10px;
+}
+
+
+
+
